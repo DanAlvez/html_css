@@ -1,0 +1,422 @@
+html {
+  font-size: 62.5%;
+  --color-primary: rgba(186, 83, 112, 0.7);
+  --secondary-color: #ddd;
+  --tercearea-color: #44415a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVEGAÇÃO */
+
+header {
+  background-color: var(--color-primary);
+  position: fixed;
+  min-width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 2rem;
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin: 0 4rem 0 0;
+  font-size: 1.6rem;
+}
+
+ul li a:last-child {
+  margin-right: 7rem;
+}
+
+.logo {
+  max-width: 15rem;
+  margin: 1.5rem;
+}
+
+.w-6 {
+  max-width: 3.5rem;
+  color: white;
+  margin: 1.5rem;
+}
+
+/* CONTEÚDO */
+
+main {
+  background-image: linear-gradient(
+    to right,
+    rgb(186, 83, 112),
+    rgb(23, 20, 48)
+  );
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 0 0.1rem;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin: 0 0 2rem;
+  color: var(--secondary-color);
+}
+
+.banner p {
+  color: var(--secondary-color);
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  margin: 0 2rem;
+}
+
+button {
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: transparent;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border-color: var(--secondary-color);
+  border-radius: 2rem;
+  margin: 2rem 0;
+  transition: all linear 1s;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0 0.1rem;
+  background-image: url(../img/aboult.png);
+  color: white;
+  font-family: 'Roboto';
+  background-attachment: fixed;
+}
+
+.about h1,
+.contact .services h1,
+.contact .email h1 {
+  letter-spacing: 0.5rem;
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+
+.about p {
+  font-size: 1.8rem;
+  background-color: var(--color-primary);
+  padding: 2rem;
+  margin: 2rem;
+  color: var(--secondary-color);
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+  color: var(--secondary-color);
+  font-family: 'Roboto';
+}
+
+.services p {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.services button svg {
+  margin: 0;
+  padding: 0;
+  max-width: 2rem;
+}
+
+.services button {
+  white-space: nowrap;
+  padding: 1rem 3rem;
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  margin: 1rem;
+}
+
+.icon p {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.icon svg {
+  color: var(--secondary-color);
+  min-width: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+form .group input:last-child,
+form .group input:first-child,
+textarea {
+  margin: 0.5rem 0;
+  min-width: 100%;
+}
+
+form .groups .group,
+form .groups {
+  min-width: 100%;
+}
+
+form input,
+textarea {
+  min-width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-color: white;
+  border-style: solid;
+}
+
+form button {
+  min-width: 100%;
+}
+
+/* RODAPÉ */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.ltdeveloper img {
+  max-width: 15rem;
+  margin: 1.5rem;
+}
+
+.ltdeveloper p {
+  color: var(--tercearea-color);
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  margin: 0 1rem;
+  max-width: 100%;
+}
+
+.social img {
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+  margin: 1rem;
+}
+
+hr {
+  color: var(--tercearea-color);
+  max-width: 85%;
+}
+
+h2 {
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: var(--tercearea-color);
+  font-family: 'Roboto';
+  font-weight: 400;
+  width: 100%;
+}
+
+.local {
+  padding: 0 2rem;
+  display: block;
+}
+
+.local p {
+  text-align: start;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  color: var(--tercearea-color);
+}
+
+.menu {
+  display: block;
+  text-align: start;
+}
+
+.menu ol {
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 2rem;
+  margin: 0;
+}
+
+.menu ol li a {
+  text-decoration: none;
+  color: var(--tercearea-color);
+}
+
+/* RESPOSIVIDADE */
+
+@media only screen and (min-width: 1024px) {
+  header {
+    max-height: 6rem;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 6rem;
+  }
+
+  nav .w-6 {
+    display: none;
+  }
+
+  ul {
+    display: block;
+    padding: 0;
+  }
+
+  .banner {
+    flex-direction: row;
+  }
+
+  .rennab {
+    text-align: start;
+    margin-left: 3rem;
+  }
+
+  .rennab p {
+    margin: 0;
+  }
+
+  .rennab button {
+    padding: 1.5rem 3rem;
+  }
+
+  .banner img {
+    max-width: 63rem;
+  }
+
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about h1 {
+    font-size: 4rem;
+    margin-left: 30rem;
+  }
+
+  .about p {
+    max-width: 53rem;
+    margin-right: 2rem;
+  }
+
+  .collum {
+    display: flex;
+    align-items: center;
+  }
+
+  .collum img {
+    max-width: 73rem;
+  }
+
+  .contact .services h1 {
+    font-size: 4rem;
+  }
+
+  .icon:first-child {
+    margin-left: auto;
+  }
+
+  .icon:last-child {
+    margin-right: auto;
+  }
+
+  form .groups,
+  textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75%;
+  }
+
+  form .group {
+    min-width: 50% !important;
+  }
+
+  form .group:last-child {
+    margin-left: 0.5rem;
+  }
+
+  form button {
+    min-width: 75%;
+  }
+
+  hr {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    min-width: 35rem;
+    max-width: 35rem;
+    margin: 0;
+    padding: 2rem 0;
+  }
+
+  .footer p,
+  .menu ol,
+  .footer h2 {
+    text-align: center;
+  }
+}
